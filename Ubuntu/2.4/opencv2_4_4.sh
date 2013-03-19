@@ -10,7 +10,7 @@ cd OpenCV
 echo "Removing any pre-installed ffmpeg and x264"
 sudo apt-get -y remove ffmpeg x264 libx264-dev
 echo "Installing Dependenices"
-sudo apt-get -y install libopencv-dev
+#sudo apt-get -y install libopencv-dev
 sudo apt-get -y install build-essential checkinstall cmake pkg-config yasm
 sudo apt-get -y install libtiff4-dev libjpeg-dev libjasper-dev
 sudo apt-get -y install libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev libxine-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev libv4l-dev
@@ -56,7 +56,7 @@ echo "Downloading OpenCV 2.4.4"
 wget -O OpenCV-2.4.4a.tar.bz2 http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/2.4.4/OpenCV-2.4.4a.tar.bz2/download
 echo "Installing OpenCV 2.4.4"
 tar -xvf OpenCV-2.4.4a.tar.bz2
-cd OpenCV-2.4.4
+cd opencv-2.4.4
 mkdir build
 cd build
 cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D WITH_TBB=ON -D BUILD_NEW_PYTHON_SUPPORT=ON -D WITH_V4L=ON -D INSTALL_C_EXAMPLES=ON -D INSTALL_PYTHON_EXAMPLES=ON -D BUILD_EXAMPLES=ON -D WITH_QT=ON -D WITH_OPENGL=ON ..
