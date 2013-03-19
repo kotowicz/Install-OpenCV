@@ -65,3 +65,7 @@ sudo make install
 sudo sh -c 'echo "/usr/local/lib" > /etc/ld.so.conf.d/opencv.conf'
 sudo ldconfig
 echo "OpenCV 2.4.4 ready to be used"
+#
+# test the libraries:
+# cd bin
+# ./opencv_test_core
